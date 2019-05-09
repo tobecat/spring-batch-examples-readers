@@ -6,7 +6,7 @@ pipeline {
             stage('stage1') {
                 steps {
                     withMaven(maven: 'maven 3.6.1', jdk: 'jdk 8u212') {
-                        sh 'mvn --version'
+                        sh 'mvn clean install'
                     }
 
                   }
